@@ -1,2 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700');
+
+$font-roboto: 'Roboto', sans-serif;
+$font-weight-light:300;
+$font-weight-medium:500;
+$font-weight-bold:700;
+$font-italic:400i;
+$font-italic-medium:500i;
 
 
+@font-face {
+  font-family: 'Geneva';
+  src: url('fonts/Geneva/Geneva.eot?#iefix') format('embedded-opentype'),  url('fonts/Geneva/Geneva.woff') format('woff'), url('fonts/Geneva/Geneva.ttf')  format('truetype'), url('fonts/Geneva/Geneva.svg#Geneva') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-geneva:'Geneva';
