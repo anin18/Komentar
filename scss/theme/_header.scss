@@ -1,1 +1,172 @@
+$text-header-color:$dark;
+$line-header-color:#0BAE92;
+$bg-toggler:#0BAE92;
+$toggler-line:$secondary;
+
+//HEADER-TOP
+.header-top {
+    a.btn {
+        border: 1px solid #8AB957 !important;
+        border-radius: 4px;
+    }
+    .social{
+        .social-icon{
+            display:inline-block;
+            font-size: 1.07rem;
+            width:17px;
+            height:18px;
+            margin-right:0.5rem;
+            .fa-facebook{
+                color:#fff;
+            }
+        }
+    }
+}
+
+//------------HEADER-BOTTOM------------
+
+.header-bottom {
+    //----------navbar-toggler----------
+    .navbar-toggler{
+        border-color:$line-header-color;  
+        .line1, .line2, .line3 {
+            display: block;
+            width: 34px;
+            height: 2px;
+            background-color: $toggler-line;
+            margin: 6px 0;
+            transition: 0.4s;       
+        }     
+        &:hover, &:focus {
+            background: $line-header-color;
+            .line1, .line2, .line3 {
+                background-color: $white;
+                transition: 0.2s;
+            }
+        }
+    }
+    .active .line1 {
+        -webkit-transform:rotate(45deg) translate(7px , 6px);
+        transform: rotate(45deg) translate(7px , 6px);
+    }
+    .active .line2 {opacity: 0;}
+    .active .line3 {
+        -webkit-transform: rotate(-45deg) translate(5px , -6px);
+        transform: rotate(-45deg) translate(5px , -6px);
+    } //---------toggler ends here-------------
+
+    border-top:2px solid $light;
+    
+     //---------search-form----------------
+    .search-form{
+        display: none;
+        position: absolute;
+        top:100%;
+        left:0%;
+        width: 100%;   
+     
+        .form-control{
+            border:1px solid $line-header-color;
+            border-radius: 0.25rem;
+            &:focus, .input-group-append:focus &{
+                box-shadow: 1px 1px 10px  $dark;
+            }
+        }
+    }
+    .search-icon {
+        color:#979797;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    //-----------navbar-nav------------
+    .navbar-nav{
+        background:$light;
+        .nav-item {
+            border-bottom:2px solid $line-header-color;
+            .nav-link{
+                display:block;
+                text-align: center;
+                padding:0;
+                font-size:16px;
+                .nav-span{
+                    color:$text-header-color;
+                }
+                &:hover span {
+                    color:inherit !important;
+                }
+                .nav-span{            
+                    display: inline-block;  
+                    padding:5px 0 10px;
+                }              
+            }     
+        }
+    }
+}
+
+@media(min-width:450px) {
+    .header-bottom{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    font-size: 18px;
+                    .nav-span{
+                        padding:5px 5px 10px;
+                        &:hover {
+                            border-top-color: inherit;  
+                            border-bottom-color: transparent !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .header-bottom{
+        .navbar-nav{
+            background:$white;
+            .nav-item{
+                .category-color{
+                    color:$text-header-color !important;
+                } 
+                border-bottom:none;
+                .nav-link{
+                    font-size: 16px;
+                    .nav-span{
+                        color:$text-header-color !important; 
+                        border-top: 2px;
+                        border-color: transparent;
+                        border-top-width: 3px;
+                        border-style: solid;
+                    }
+                    &:hover span{      
+                        border-bottom-color: inherit;      
+                        transition: 0.7s ease;
+                    }
+                }  
+
+            }
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .header-bottom{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    font-size:18px;
+                    .nav-span{
+                        padding:8px 15px 14px;
+                    }
+                }  
+                &:hover{
+                    background: $light;       
+                }
+            }
+        }
+    }
+}
+
 
