@@ -89,9 +89,10 @@ $toggler-line:$secondary;
                 padding:0;
                 font-size:16px;
                 .nav-span{
+                    display: block;
                     color:$text-header-color;
                 }
-                &:hover span {
+                &:hover span, &:active span {
                     color:inherit !important;
                 }
                 .nav-span{            
@@ -134,13 +135,10 @@ $toggler-line:$secondary;
                 .nav-link{
                     font-size: 16px;
                     .nav-span{
-                        color:$text-header-color !important; 
-                        border-top: 2px;
-                        border-color: transparent;
-                        border-top-width: 3px;
-                        border-style: solid;
+                        color:$text-header-color !important;
+                        border:2px solid transparent;
                     }
-                    &:hover span{      
+                    &:hover span, &:active span{      
                         border-bottom-color: inherit;      
                         transition: 0.7s ease;
                     }

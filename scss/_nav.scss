@@ -13,7 +13,7 @@
 
 .nav-link {
   display: block;
-  padding: $nav-link-padding-y $nav-link-padding-x;
+  padding: 0.3rem $nav-link-padding-x 0.1rem;
 
   @include hover-focus {
     text-decoration: none;
@@ -56,7 +56,7 @@
   .nav-link.active,
   .nav-item.show .nav-link {
     color: $nav-tabs-link-active-color;
-    background-color: $nav-tabs-link-active-bg;
+    background-color:#F2F2F2;
     border-color: $nav-tabs-link-active-border-color;
   }
 

@@ -1,0 +1,102 @@
+
+.lead-aside{
+
+    box-shadow: 0 3px 34px 0 rgba(0,0,0,0.1);
+    border: 1px solid #E4E2E2;
+
+    .aside-title{
+        background: linear-gradient(-90deg, #FFFFFF 0%, #F3F3F3 100%);
+        border-bottom: 1px solid #E4E2E2;
+        border-top: 2px solid #8AB957;
+        font-family: $font-roboto;
+        font-weight: $font-weight-medium;
+    }
+    .aside-items{
+        .aside-user-icon {
+            background-color: #D8D8D8 !important;
+            width:24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .bot-name{
+            font-family: $font-roboto;
+            font-weight: $font-weight-medium;
+        }
+        .aside-date {
+            span{
+                color:$date-color;
+            }
+        }
+        hr{
+            height: 3px;
+            color: #D8D8D8 !important; 
+        }
+        .aside-bot-info{
+
+            .fa{
+                font-size: 15px;
+                display: block;
+            }
+            .bot-name{
+                font-size: 12px;
+                display: block;
+            }
+        }
+    }
+}
+
+.lead-comments {
+    border: 1px solid #E4E2E2;
+    box-shadow: 0 3px 34px 0 rgba(0,0,0,0.1);
+
+    .lead-comments-items{
+        .bot-counter{
+            width:32px;
+            height: 26px;
+            top:30%;
+            right:-2%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 11px;
+            position:relative;
+            &:after{
+                content:'';
+                position: absolute;
+                right:0;
+                bottom:-6px;
+                background: transparent;
+                border:3px solid #767778;
+                border-right-color: transparent;
+                border-bottom-color:transparent;
+            }
+        }
+        &:first-of-type{
+            border-top: 1px solid #E4E2E2;
+        }
+
+
+        figure{
+            img{
+                display: block;
+                width: 100%;
+                height:100%;
+            }
+        }
+        .lead-comments-title{
+            line-height: 1.3rem;
+            max-height: 4rem;
+            overflow:hidden;
+        }
+        .aside-date{
+            color:$date-color;
+        }
+        hr{
+            height: 2.5px;
+            border-color: #D8D8D8; 
+        }
+
+    }
+
+}

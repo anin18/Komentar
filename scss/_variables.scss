@@ -15,7 +15,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #25282A !default;
-$black:    #000 !default;
+
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -44,7 +44,7 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
-
+$black:    #000 !default;
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
@@ -60,8 +60,8 @@ $colors: map-merge(
     "teal":       $teal,
     "cyan":       $cyan,
     "white":      $white,
-    "gray":       $gray-500
-    
+    "gray":       $gray-500,
+    "black":      $black
 
   ),
   $colors
@@ -75,6 +75,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$black:         $black !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -87,7 +88,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "black":      $black
   ),
   $theme-colors
 );
@@ -148,8 +150,16 @@ $sizes: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $sizes: map-merge(
   (
+    10: 10%,
     25: 25%,
+    30: 30%,
+    40: 40%,
+    45: 45%,
     50: 50%,
+    55: 55%,
+    60: 60%,
+    65: 65%,
+    70: 70%,
     75: 75%,
     100: 100%,
     auto: auto
@@ -195,7 +205,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1300px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -210,7 +220,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1177px
+ 
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -220,8 +231,8 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-columns:                14 !default;
+$grid-gutter-width:           17px !default;
 
 
 // Components

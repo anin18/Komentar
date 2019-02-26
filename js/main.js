@@ -53,11 +53,23 @@ $(document).ready(function () {
     });
 
     //HAMBURGER
-     $('.navbar-toggler').click(function(){
+    $('.navbar-toggler').click(function () {
         $(this).toggleClass('active');
     });
- 
-    
+
+
+    //  OWL-CAROUSEL
+    if ($('.owl-carousel').length > 0) {
+
+        $('.lead-slider').owlCarousel({
+            dots: false,
+            nav: true,
+            loop: true,
+            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+            items: 1
+        });
+    }
+
 
 
 

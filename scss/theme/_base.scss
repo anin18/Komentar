@@ -1,10 +1,18 @@
-
+$date-color:#7C7C7C;
+$body-bg: #F2F2F2;
 html{
     font-size: 14px;
+}
+body{
+    background: $body-bg;
+    font-family: $font-roboto;
 }
 
 img{
     max-width: 100%;
+}
+a:hover {
+    text-decoration: none;
 }
 
 // Placeholder for image
@@ -29,7 +37,17 @@ img{
     }
     &.size-4by3{
         &:after{
-            padding-top: 75%;
+            padding-top: 73.59%;
+        }
+    }
+    &.size-3by2{
+        &:after{
+            padding-top:66.62%;
+        }
+    }
+    &.size-2by1{
+        &:after{
+            padding-top:53.75%;
         }
     }
     &.size-16by9{
@@ -45,5 +63,6 @@ img{
         left: 0;
         width: 100%;
     }
+    
 }
 
