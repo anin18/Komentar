@@ -13,7 +13,7 @@ $gray-400: #ced4da !default;
 $gray-500: #ABABAB !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
+$gray-800: #313131 !default;
 $gray-900: #25282A !default;
 
 
@@ -67,7 +67,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       $gray-800 !default;
 $secondary:     $gray-500 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -151,6 +151,7 @@ $sizes: () !default;
 $sizes: map-merge(
   (
     10: 10%,
+    15: 15%,
     25: 25%,
     30: 30%,
     40: 40%,
@@ -161,6 +162,7 @@ $sizes: map-merge(
     65: 65%,
     70: 70%,
     75: 75%,
+    85: 85%,
     100: 100%,
     auto: auto
   ),

@@ -14,6 +14,9 @@ img{
 a:hover {
     text-decoration: none;
 }
+p{
+    margin-bottom: 0;
+}
 
 // Placeholder for image
 
@@ -37,7 +40,7 @@ a:hover {
     }
     &.size-4by3{
         &:after{
-            padding-top: 75.27%;
+            padding-top: 75.26%;
         }
     }
     &.size-3by2{

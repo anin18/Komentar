@@ -5,6 +5,8 @@ $toggler-line:$secondary;
 
 //HEADER-TOP
 .header-top {
+      border-bottom:2px solid $light;
+      position:relative;
     a.btn {
         border: 1px solid #8AB957 !important;
         border-radius: 4px;
@@ -55,7 +57,7 @@ $toggler-line:$secondary;
         transform: rotate(-45deg) translate(5px , -6px);
     } //---------toggler ends here-------------
 
-    border-top:2px solid $light;
+  
     
      //---------search-form----------------
     .search-form{
@@ -64,18 +66,23 @@ $toggler-line:$secondary;
         top:100%;
         left:0%;
         width: 100%;   
-     
+        background-color:$body-bg;
         .form-control{
-            border:1px solid $line-header-color;
+            border:2px solid $line-header-color;
             border-radius: 0.25rem;
             &:focus, .input-group-append:focus &{
                 box-shadow: 1px 1px 10px  $dark;
             }
         }
+        .btn{
+            border:2px solid $line-header-color;
+            border-radius: 0.25rem;
+            line-height: 1.2rem;
+        }
     }
     .search-icon {
         color:#979797;
-        font-size: 18px;
+        font-size: 22px;
         cursor: pointer;
     }
     //-----------navbar-nav------------
@@ -91,9 +98,11 @@ $toggler-line:$secondary;
                 .nav-span{
                     display: block;
                     color:$text-header-color;
+                     margin-top:-1px;
                 }
                 &:hover span, &:active span {
                     color:inherit !important;
+                   
                 }
                 .nav-span{            
                     display: inline-block;  
@@ -140,7 +149,7 @@ $toggler-line:$secondary;
                     }
                     &:hover span, &:active span{      
                         border-bottom-color: inherit;      
-                        transition: 0.7s ease;
+                        transition: 0.4s ease;
                     }
                 }  
 

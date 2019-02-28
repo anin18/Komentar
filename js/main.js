@@ -49,7 +49,7 @@ $(document).ready(function () {
     //SEARCH
 
     $('.search-icon').click(function () {
-        $(this).next().toggle('4s');
+        $(this).next().slideToggle();
     });
 
     //HAMBURGER
@@ -67,6 +67,29 @@ $(document).ready(function () {
             loop: true,
             navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
             items: 1
+        });
+        $('.newest-comments-slider').owlCarousel({
+            dots:true,
+            nav:false,
+            loop:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                450:{
+                    items:2
+                },
+                576:{
+                    items:3
+                },
+                768:{
+                    items:4
+                },
+                992:{
+                    items:5
+                }
+                
+            }
         });
     }
 
