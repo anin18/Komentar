@@ -77,6 +77,33 @@ $commetnted-news-color:#7c7c7c;
 }
 /*section NEWEST-COMMENTS starts here*/
 .newest-comments{
+    position:relative;
+    .owl-dots {
+        position: absolute;
+        left:50%;
+        top:100%;
+        transform:translate(-50%);
+        .owl-dot {          
+            text-align: center;
+            width:8px;
+            height:8px;
+            margin:8px;
+            border-radius: 50%;
+            background-color: #BABABA;      
+            
+        }
+        .active {
+                background-color:#0BAE92;
+                border-radius: 50%;
+            }
+
+    }
+
+
+
+
+
+
     .newest-comments-line{
         background: linear-gradient(90deg, #FFFFFF 0%, #F9F9F9 79.15%, #F2F2F2 100%);
         position: relative;
@@ -92,61 +119,62 @@ $commetnted-news-color:#7c7c7c;
     }
     .newest-comments-slider{
         background-color: $body-bg !important;
-    li{
-        border: 0.5px solid #ABABAB;
-        box-shadow: 0 3px 34px 0 rgba(0,0,0,0.1);
-        margin:10px;
-        .commment-content{
-            font-weight: $font-weight-medium;
-            font-style: italic;
-            position: relative;
-            &:before{
-                content: '"';
-                position: absolute;
-                top:0;
-                left:-1%;
-                width:35px;
-                height: 39px;
-                font-family: $font-geneva;
-                color:#0BAE92;
+        position:relative;
+        li{
+            border: 0.5px solid #ABABAB;
+            box-shadow: 0 3px 34px 0 rgba(0,0,0,0.1);
+            margin:10px;
+            .commment-content{
+                font-weight: $font-weight-medium;
+                font-style: italic;
+                position: relative;
+                &:before{
+                    content: '"';
+                    position: absolute;
+                    top:0;
+                    left:-1%;
+                    width:35px;
+                    height: 39px;
+                    font-family: $font-geneva;
+                    color:#0BAE92;
+                }
+                &:after{
+                    content: '"';
+                    bottom:0%;
+                    right:-1%;
+                    position: absolute;
+                    width:35px;
+                    height: 39px;
+                    font-family: $font-geneva;
+                    color:#0BAE92;
+                }
             }
-            &:after{
-                content: '"';
-                bottom:0%;
-                right:-1%;
-                position: absolute;
-                width:35px;
-                height: 39px;
-                font-family: $font-geneva;
-                color:#0BAE92;
-            }
-        }
-        .commented-news{
-            color:$commetnted-news-color;
-        }
-        .slider-date{
-            span{
-                color:$date-color;
-                font-weight: $font-weight-light;
 
+            .commented-news{
+                color:$commetnted-news-color;
+            }
+            .article-date{
+                span{
+                    color:$date-color;
+                    font-weight: $font-weight-light;
+                }
+            }
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                bottom:-30px;
+                left:15px;
+                width:40px;
+                height:30px;
+                border-style: solid;
+                border-width: 20px;
+                border-top-color: white;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
             }
         }
-        position: relative;
-        &:after{
-            content: '';
-            position: absolute;
-            bottom:-30px;
-            left:15px;
-            width:40px;
-            height:30px;
-            border-style: solid;
-            border-width: 20px;
-            border-top-color: white;
-            border-left-color: transparent;
-            border-right-color: transparent;
-            border-bottom-color: transparent;
-        }
-    }
     }
 
 } 

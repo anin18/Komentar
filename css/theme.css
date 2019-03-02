@@ -457,64 +457,82 @@ p {
     position: relative; }
 
 /*section NEWEST-COMMENTS starts here*/
-.newest-comments .newest-comments-line {
-  background: linear-gradient(90deg, #FFFFFF 0%, #F9F9F9 79.15%, #F2F2F2 100%);
+.newest-comments {
   position: relative; }
-  .newest-comments .newest-comments-line:before {
-    content: '';
+  .newest-comments .owl-dots {
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 3px;
-    width: 100%;
-    background: linear-gradient(90deg, #0BAE92 0%, #F2F2F2 100%); }
-.newest-comments .newest-comments-slider {
-  background-color: #F2F2F2 !important; }
-  .newest-comments .newest-comments-slider li {
-    border: 0.5px solid #ABABAB;
-    box-shadow: 0 3px 34px 0 rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%); }
+    .newest-comments .owl-dots .owl-dot {
+      text-align: center;
+      width: 8px;
+      height: 8px;
+      margin: 8px;
+      border-radius: 50%;
+      background-color: #BABABA; }
+    .newest-comments .owl-dots .active {
+      background-color: #0BAE92;
+      border-radius: 50%; }
+  .newest-comments .newest-comments-line {
+    background: linear-gradient(90deg, #FFFFFF 0%, #F9F9F9 79.15%, #F2F2F2 100%);
     position: relative; }
-    .newest-comments .newest-comments-slider li .commment-content {
-      font-weight: 500;
-      font-style: italic;
-      position: relative; }
-      .newest-comments .newest-comments-slider li .commment-content:before {
-        content: '"';
-        position: absolute;
-        top: 0;
-        left: -1%;
-        width: 35px;
-        height: 39px;
-        font-family: "Geneva";
-        color: #0BAE92; }
-      .newest-comments .newest-comments-slider li .commment-content:after {
-        content: '"';
-        bottom: 0%;
-        right: -1%;
-        position: absolute;
-        width: 35px;
-        height: 39px;
-        font-family: "Geneva";
-        color: #0BAE92; }
-    .newest-comments .newest-comments-slider li .commented-news {
-      color: #7c7c7c; }
-    .newest-comments .newest-comments-slider li .slider-date span {
-      color: #7C7C7C;
-      font-weight: 300; }
-    .newest-comments .newest-comments-slider li:after {
+    .newest-comments .newest-comments-line:before {
       content: '';
       position: absolute;
-      bottom: -30px;
-      left: 15px;
-      width: 40px;
-      height: 30px;
-      border-style: solid;
-      border-width: 20px;
-      border-top-color: white;
-      border-left-color: transparent;
-      border-right-color: transparent;
-      border-bottom-color: transparent; }
+      left: 0;
+      top: 0;
+      height: 3px;
+      width: 100%;
+      background: linear-gradient(90deg, #0BAE92 0%, #F2F2F2 100%); }
+  .newest-comments .newest-comments-slider {
+    background-color: #F2F2F2 !important;
+    position: relative; }
+    .newest-comments .newest-comments-slider li {
+      border: 0.5px solid #ABABAB;
+      box-shadow: 0 3px 34px 0 rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      position: relative; }
+      .newest-comments .newest-comments-slider li .commment-content {
+        font-weight: 500;
+        font-style: italic;
+        position: relative; }
+        .newest-comments .newest-comments-slider li .commment-content:before {
+          content: '"';
+          position: absolute;
+          top: 0;
+          left: -1%;
+          width: 35px;
+          height: 39px;
+          font-family: "Geneva";
+          color: #0BAE92; }
+        .newest-comments .newest-comments-slider li .commment-content:after {
+          content: '"';
+          bottom: 0%;
+          right: -1%;
+          position: absolute;
+          width: 35px;
+          height: 39px;
+          font-family: "Geneva";
+          color: #0BAE92; }
+      .newest-comments .newest-comments-slider li .commented-news {
+        color: #7c7c7c; }
+      .newest-comments .newest-comments-slider li .article-date span {
+        color: #7C7C7C;
+        font-weight: 300; }
+      .newest-comments .newest-comments-slider li:after {
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        left: 15px;
+        width: 40px;
+        height: 30px;
+        border-style: solid;
+        border-width: 20px;
+        border-top-color: white;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent; }
 
 .lead-aside {
   box-shadow: 0 3px 34px 0 rgba(0, 0, 0, 0.1);

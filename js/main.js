@@ -79,16 +79,12 @@ $(document).ready(function () {
                 450:{
                     items:2
                 },
-                576:{
+                768:{
                     items:3
                 },
-                768:{
-                    items:4
-                },
                 992:{
-                    items:5
+                    items:4
                 }
-                
             }
         });
     }
