@@ -76,21 +76,22 @@ $commetnted-news-color:#7c7c7c;
     }
 }
 /*section NEWEST-COMMENTS starts here*/
-.newest-comments{
+.newest-comments-section{
     position:relative;
+    margin-bottom:70px;
     .owl-dots {
         position: absolute;
         left:50%;
         top:100%;
         transform:translate(-50%);
+       
         .owl-dot {          
             text-align: center;
             width:8px;
             height:8px;
             margin:8px;
             border-radius: 50%;
-            background-color: #BABABA;      
-            
+            background-color: #BABABA;                 
         }
         .active {
                 background-color:#0BAE92;
@@ -99,12 +100,7 @@ $commetnted-news-color:#7c7c7c;
 
     }
 
-
-
-
-
-
-    .newest-comments-line{
+   .comments-line{
         background: linear-gradient(90deg, #FFFFFF 0%, #F9F9F9 79.15%, #F2F2F2 100%);
         position: relative;
         &:before{
@@ -124,30 +120,31 @@ $commetnted-news-color:#7c7c7c;
             border: 0.5px solid #ABABAB;
             box-shadow: 0 3px 34px 0 rgba(0,0,0,0.1);
             margin:10px;
+            position:relative;
+            .newest-comments-top{
+                &:before{
+                    content:'"';
+                    display: block;
+                    position: absolute;
+                    top:20%;
+                    left:2%;
+                    color:#0BAE92;
+                    font-size: 35px;
+                }
+                 &:after{
+                    content:'"';
+                     display: block;
+                    position: absolute;
+                    bottom:30%;
+                    right:5%;
+                    color:#0BAE92;
+                    font-size: 35px;
+                }
             .commment-content{
                 font-weight: $font-weight-medium;
                 font-style: italic;
-                position: relative;
-                &:before{
-                    content: '"';
-                    position: absolute;
-                    top:0;
-                    left:-1%;
-                    width:35px;
-                    height: 39px;
-                    font-family: $font-geneva;
-                    color:#0BAE92;
-                }
-                &:after{
-                    content: '"';
-                    bottom:0%;
-                    right:-1%;
-                    position: absolute;
-                    width:35px;
-                    height: 39px;
-                    font-family: $font-geneva;
-                    color:#0BAE92;
-                }
+               
+            }
             }
 
             .commented-news{

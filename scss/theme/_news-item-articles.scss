@@ -1,0 +1,162 @@
+$date-color:#7C7C7C;
+$commentator-color:#8D8B8B;
+.comments-line{
+    background: linear-gradient(90deg, #FFFFFF 0%, #F9F9F9 79.15%, #F2F2F2 100%);
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        left:0;
+        top:0;
+        height: 3px;
+        width: 100%;
+        background: linear-gradient(90deg, #E0311F 0%, #F2F2F2 100%);
+    }
+}
+.news-item-bottom-title{
+    padding-right: 10px;
+}
+.youtube-comments-section{   
+
+        .news-item-top-title, .news-item-bottom-title{
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            max-height: 1.78rem;
+            overflow:hidden;
+        }
+}
+@media(min-width:450px){
+    .youtube-comments-section{   
+        
+            .news-item-top-title, .news-item-bottom-title{
+                font-size: 1.25rem;
+                line-height:1.25rem;
+                max-height: 2.50rem;
+                overflow:hidden;
+            }
+        }
+}
+@media(min-width:576px){
+    .youtube-comments-section,
+    .news-comments-section,
+    .sport-comments-section{   
+        
+            .news-item-top-title,.news-item-bottom-title{
+                font-size: 0.875rem;
+                line-height: 0.875rem;
+                max-height: 1.74rem;
+                overflow:hidden;
+            }
+        }   
+}
+@media(min-width:768px){
+   .news-comments-section, .sport-comments-section{   
+        
+            .news-item-top-title, .news-item-bottom-title{
+                font-size: 0.85rem;
+                line-height: 0.85rem;
+                max-height: 1.80rem;
+                overflow:hidden;
+            }
+        }   
+}
+@media(min-width:1200px){
+    .youtube-comments-section, .news-comments-section, .sport-comments-section{   
+        
+            .news-item-top-title{
+                font-size: 1.15rem;
+                line-height:1.15rem;
+                max-height: 2.3rem;
+                overflow:hidden;
+            }
+         .news-item-bottom-title{
+                font-size: 1em;
+                line-height:1.1rem;
+                max-height: 2.2rem;
+                overflow:hidden;
+            }
+        
+    }
+}
+.news-comments-section{
+    .comments-line{
+        &:before{
+            background: linear-gradient(90deg, #8AB957 0%, #F2F2F2 100%);
+        }
+    }
+}
+.sport-comments-section{
+    .comments-line{
+        &:before{
+            background: linear-gradient(90deg, #18B6E9 0%, #F2F2F2 100%);
+        }
+    }
+}
+.news-item-article {
+
+    .fa{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color:#fff;
+        background: rgba(255,255,255,0.3);
+        width:50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        &:hover{            
+            opacity:0.8;           
+        }
+
+    }
+    .news-item-detail{
+        left:2%;
+        bottom:2%;
+        .news-title{
+            font-weight: $font-weight-normal;
+        }
+        a:hover{
+            opacity:0.7;
+
+        }
+
+    }
+    .news-item-bottom{
+        a:hover{
+            opacity:0.7;
+        }
+        .commentator{
+            color:$commentator-color;
+        }
+        .news-item-bottom-title{
+            font-style: italic;
+        }
+        .article-date{
+            color:$date-color;          
+        }
+    }
+    .bot-counter{
+        right:0;
+        top:80%;
+        width:32px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 11px;
+        position:relative;
+        &:after{
+            content:'';
+            position: absolute;
+            right:0;
+            bottom:-6px;
+            background: transparent;
+            border:3px solid #767778;
+            border-right-color: transparent;
+            border-bottom-color:transparent;
+        }
+    }
+}
