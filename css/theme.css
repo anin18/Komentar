@@ -692,10 +692,10 @@ aside .news-collection-aside {
 aside .news-item-article .bot-counter {
   top: 30%;
   right: -2%; }
-aside .news-item:first-child .bot-counter {
+aside .news-item .bot-counter {
   top: 47%;
   right: 5%; }
-  aside .news-item:first-child .bot-counter:after {
+  aside .news-item .bot-counter:after {
     content: '';
     position: absolute;
     right: 0;
