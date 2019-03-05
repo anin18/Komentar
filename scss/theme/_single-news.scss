@@ -52,7 +52,7 @@ $news-type-bg:#EBEBEB;
         }
     } 
 }
-/*section COMMETN-WRAPPER*/
+/*section COMMENT-WRAPPER*/
 .comment-wrapper{
     .comments-form{
         width:100%;
@@ -75,10 +75,10 @@ $news-type-bg:#EBEBEB;
             font-weight: $font-weight-light;
         }
         .comments-item-form{
-           background-color: #FAFAFA;
-             button:hover{
-            opacity:0.7;
-        }
+            background-color: #FAFAFA;
+            button:hover{
+                opacity:0.7;
+            }
         }
         .counting-likes{
             .like-comment,
@@ -89,14 +89,25 @@ $news-type-bg:#EBEBEB;
                 padding:6px;             
             }
             a:hover{
-                      opacity:0.7;
-                }
+                opacity:0.7;
+            }
         }
-        
+
     }
     .all-comments:hover{
-            opacity:0.7;
+        opacity:0.7;
+    }
+    
+    /*  comment-page*/
+    .next-page{
+        a{
+            font-size:1.2rem;
+            .fa{
+                font-size: 1.5rem;
+            }
         }
+     
+    }
 }
 /*RED-MORE section starts here*/
 .read-more{
@@ -141,7 +152,7 @@ $news-type-bg:#EBEBEB;
             }
         }
     }
-     .read-more{
+    .read-more{
         .read-more-item{
             p{
                 font-size: 1rem;
