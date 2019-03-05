@@ -1,0 +1,151 @@
+$news-type-color:#3E3E3E;
+$news-type-bg:#EBEBEB;
+
+/**/
+.single-news-wrapper{
+    /*section SINGLE-NEWS-WRAPPER*/
+    .single-news-header{
+        .news-type{
+            text-transform: uppercase;
+            color:$news-type-color;
+            font-weight: $font-weight-medium;
+            padding: 5px;
+            background-color:$news-type-bg;
+        }
+        .bot-counter{
+            right:0;
+            top:80%;
+            width:32px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            font-size: 11px;
+            position:relative;
+            &:after{
+                content:'';
+                position: absolute;
+                right:0;
+                bottom:-6px;
+                background: transparent;
+                border:3px solid #767778;
+                border-right-color: transparent;
+                border-bottom-color:transparent;
+            }
+
+        }
+        .date{
+            color:$date-color;
+        }
+        img{
+            display:block; 
+        }
+        .img-detail{
+            bottom: 2%;
+            right:3%;
+        }
+    }
+
+    /*article SINGLE-NEWS-CONTENT starts here*/
+    .single-news-content{
+        li{
+            margin-bottom: 1.7rem;
+        }
+    } 
+}
+/*section COMMETN-WRAPPER*/
+.comment-wrapper{
+    .comments-form{
+        width:100%;
+        padding:10px;
+        background-color: rgba(138,185,87,0.15); 
+        .form-control{
+            &::placeholder{
+                color:$secondary;
+            } 
+        }
+        button:hover{
+            opacity:0.7;
+        }
+    } 
+    .comment-item{
+        border: 1px solid #E9E9E9;
+        padding: 16px 0 0 16px;
+        .date{
+            color:$date-color;
+            font-weight: $font-weight-light;
+        }
+        .comments-item-form{
+           background-color: #FAFAFA;
+             button:hover{
+            opacity:0.7;
+        }
+        }
+        .counting-likes{
+            .like-comment,
+            .dislike-comment,
+            .about-bot{
+                background-color: #FAFAFA;
+                display: inline-block;
+                padding:6px;             
+            }
+            a:hover{
+                      opacity:0.7;
+                }
+        }
+        
+    }
+    .all-comments:hover{
+            opacity:0.7;
+        }
+}
+/*RED-MORE section starts here*/
+.read-more{
+    .read-more-title{
+        border-bottom: 1px solid #d8d8d8;
+    }
+    .read-more-item{
+        p{
+            font-size: 0.875rem;
+        }
+    }
+}
+@media(min-width:450px){
+    .read-more{
+        .read-more-item{
+            p{
+                font-size: 1rem;
+                a:hover{
+                    color:#888;
+                }
+            }
+            img:hover{
+                opacity:0.8;
+            }
+        }
+    }
+}
+@media(min-width:567px){
+    .read-more{
+        .read-more-item{
+            p{
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+@media(min-width:768px){
+    .single-news-wrapper{
+        .single-news-content{
+            li{
+                font-size: 1.2rem;
+            }
+        }
+    }
+     .read-more{
+        .read-more-item{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
