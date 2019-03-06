@@ -21,9 +21,37 @@
             font-size: 1.2rem;
             &:hover{
                 opacity:0.6;  
-        } 
-    }
+            } 
+        }
     }
 }
-
-
+@media(min-width:576px){
+    .detailed-news{
+        .news-item{
+            .news-item-content{
+                padding: 0.5rem;
+                .description{
+                    line-height: 1.2rem;
+                    max-height: 2.4rem;
+                    overflow: hidden;
+                    
+                }
+            }
+        }
+    }
+}
+@media(min-width:992px){
+    .detailed-news{
+        .news-item{
+            .news-item-content{
+                padding: 0.875rem;
+                .description{
+                    line-height: 1.5rem;
+                    max-height: 4.5rem;
+                    overflow: hidden;
+                    
+                }
+            }
+        }
+    }
+}
