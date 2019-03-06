@@ -914,35 +914,41 @@ aside .news-item .bot-counter {
   .single-news-wrapper .single-news-content li {
     margin-bottom: 1.7rem; }
 
-/*section COMMETN-WRAPPER*/
-.comment-wrapper .comments-form {
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(138, 185, 87, 0.15); }
-  .comment-wrapper .comments-form .form-control::placeholder {
-    color: #ABABAB; }
-  .comment-wrapper .comments-form button:hover {
-    opacity: 0.7; }
-.comment-wrapper .comment-item {
-  border: 1px solid #E9E9E9;
-  padding: 16px 0 0 16px; }
-  .comment-wrapper .comment-item .date {
-    color: #7C7C7C;
-    font-weight: 300; }
-  .comment-wrapper .comment-item .comments-item-form {
-    background-color: #FAFAFA; }
-    .comment-wrapper .comment-item .comments-item-form button:hover {
+/*section COMMENT-WRAPPER*/
+.comment-wrapper {
+  /*  comment-page*/ }
+  .comment-wrapper .comments-form {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(138, 185, 87, 0.15); }
+    .comment-wrapper .comments-form .form-control::placeholder {
+      color: #ABABAB; }
+    .comment-wrapper .comments-form button:hover {
       opacity: 0.7; }
-  .comment-wrapper .comment-item .counting-likes .like-comment,
-  .comment-wrapper .comment-item .counting-likes .dislike-comment,
-  .comment-wrapper .comment-item .counting-likes .about-bot {
-    background-color: #FAFAFA;
-    display: inline-block;
-    padding: 6px; }
-  .comment-wrapper .comment-item .counting-likes a:hover {
+  .comment-wrapper .comment-item {
+    border: 1px solid #E9E9E9;
+    padding: 16px 0 0 16px; }
+    .comment-wrapper .comment-item .date {
+      color: #7C7C7C;
+      font-weight: 300; }
+    .comment-wrapper .comment-item .comments-item-form {
+      background-color: #FAFAFA; }
+      .comment-wrapper .comment-item .comments-item-form button:hover {
+        opacity: 0.7; }
+    .comment-wrapper .comment-item .counting-likes .like-comment,
+    .comment-wrapper .comment-item .counting-likes .dislike-comment,
+    .comment-wrapper .comment-item .counting-likes .about-bot {
+      background-color: #FAFAFA;
+      display: inline-block;
+      padding: 6px; }
+    .comment-wrapper .comment-item .counting-likes a:hover {
+      opacity: 0.7; }
+  .comment-wrapper .all-comments:hover {
     opacity: 0.7; }
-.comment-wrapper .all-comments:hover {
-  opacity: 0.7; }
+  .comment-wrapper .next-page a {
+    font-size: 1.2rem; }
+    .comment-wrapper .next-page a .fa {
+      font-size: 1.5rem; }
 
 /*RED-MORE section starts here*/
 .read-more .read-more-title {
@@ -966,5 +972,20 @@ aside .news-item .bot-counter {
 
   .read-more .read-more-item p {
     font-size: 1rem; } }
+/*..............NEWS-LIST PAGE...................*/
+.detailed-news .news-item img {
+  display: block;
+  height: 100%; }
+.detailed-news .news-item .news-item-content {
+  padding: 0.875rem;
+  color: #7C7C7C; }
+  .detailed-news .news-item .news-item-content .description {
+    margin-bottom: 0.875rem; }
+.detailed-news .news-item a:hover {
+  opacity: 0.6; }
+.detailed-news .next-page a {
+  font-size: 1.2rem; }
+  .detailed-news .next-page a:hover {
+    opacity: 0.6; }
 
 /*# sourceMappingURL=theme.css.map */

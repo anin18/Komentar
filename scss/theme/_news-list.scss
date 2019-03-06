@@ -1,0 +1,29 @@
+/*..............NEWS-LIST PAGE...................*/
+.detailed-news{
+    .news-item{
+        img{
+            display: block;
+            height:100%;
+        }
+        .news-item-content{
+            padding:0.875rem;
+            color:$date-color;
+            .description{
+                margin-bottom: 0.875rem;
+            }
+        } 
+        a:hover{
+            opacity:0.6; 
+        }
+    }
+    .next-page{
+        a{
+            font-size: 1.2rem;
+            &:hover{
+                opacity:0.6;  
+        } 
+    }
+    }
+}
+
+

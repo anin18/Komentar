@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lista Vesti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nina Knezevic">
+        <meta name="description" content="Novinski portal:'Komentar Online'">
+        <meta name="keywords" content="vest, sport, zabava.//">
+
+        <!--iOS compatibile-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Site Title">
+        <link rel="apple-touch-icon" href="putanja do ikonice favicon li neke">        
+
+
+        <!--Android compatibile-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="aplication-name" content="Site Title">
+        <link rel="icon" type="icon/png" href="putanja do ikonice favicon li neke">
+
+
+        <!--FONTOVI-->
+        <!--Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!--bootstrap-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+
+        <!--external css, like plugins ...-->
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+
+
+        <!--theme css-->
+        <link href="css/theme.css" rel="stylesheet" type="text/css"/>
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <!--header starts here-->
+        <header class="mb-4 mb-sm-5">
+
+
+            <!--header-top starts here-->
+            <div class="header-top bg-white">
+                <div class="container  d-flex justify-content-between  py-2 align-items-end">
+                    <a href="#" class="d-none d-md-block mb-0">
+                        <img src="img/logo.png" alt="logo"/>
+                    </a>
+                    <div class="social ml-auto text-center">
+                        <a href="#" class="bg-secondary social-icon"><span class="fa fa-facebook"></span></a>
+                        <a href="#" class="text-secondary social-icon"><span class="fa fa-twitter"></span></a>
+                        <a href="#" class="text-secondary social-icon"><span class="fa fa-google-plus"></span></a>
+                    </div>
+                    <a href="#" class="btn btn-sm d-inline-block text-uppercase text-secondary">prijavite se</a>
+                </div>
+            </div><!--header-top ends here-->
+
+            <!--header-bottom starts here-->
+            <div class="header-bottom bg-white">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md p-0 navbar-light bg-white">
+                        <a class="navbar-brand d-md-none" href="#">
+                            <img src="img/logo-small.png" alt=""/>
+                        </a>
+                        <div class="search-wrapper align-self-center order-md-last ml-auto pr-3">
+                            <span class="fa fa-search search-icon"></span>               
+                            <form class="search-form order-sm-first">
+                                <div class="form-group mb-0 py-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="submit"><span class="fa fa-search"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>                         
+                        </div>
+                        <button class="navbar-toggler  d-inline-block d-md-none" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                            <span class="line3"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="main-menu">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active" data-category="#0BAE92">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Naslovna</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-category="#8AB957">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Vesti</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-category="#18B6E9">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Sport</span>
+                                    </a>
+                                </li>                             
+                                <li class="nav-item" data-category="#A695C7">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Zanimljivosti</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-category="#056DD5">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Zabava</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-category="#34495E">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Hronika</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-category="#F5A16B">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Razonoda</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-category="#F1C30F">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Kultura</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-category="#F65656">
+                                    <a class="nav-link category-border category-color" href="#">
+                                        <span class="nav-span">Lifestyle</span>
+                                    </a>
+                                </li>
+                            </ul>                    
+                        </div>
+                    </nav>
+                </div> <!--header-bottom ends here-->
+            </div>
+        </header> <!--header ends here-->
+
+        <div class="container">
+            <!-------------------------------main starts here------------------------------------->
+            <main>
+
+                <!--------------------------section LEAD-NEWS starts here-------------------------------------------->
+                <section class="lead-news-section ">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-xm-5 col-lg-3 mb-4 order-last order-lg-first">
+                            <!--section lead-aside starts here-->
+                            <aside class="lead-aside" data-category="#8AB957">
+                                <div class="green-line"></div>
+                                <div class="aside-title text-align pb-2 pt-3 text-center text-uppercase">
+                                    <h6>uhvaćen bot</h6>
+                                </div>
+                                <ul class="aside-items list-unstyled bg-white mb-0 px-2">
+                                    <li class="d-flex pt-2">
+                                        <div class="w-15">
+                                            <span class="fa fa-user-o aside-user-icon text-white d-block text-center"></span>  
+                                        </div> 
+                                        <div class="w-65">
+                                            <p class="bot-name mb-0">Jovan Jovanovic</p>
+                                            <p class="small aside-date mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>
+                                            <hr class="mt-2 mb-0">
+                                        </div>
+                                        <div class="w-20 aside-bot-info category-color d-flex align-items-center">
+                                            <span class="fa fa-check-circle"></span>
+                                            <span class="bot-number pl-2">210</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex pt-2">
+                                        <div class="w-15">
+                                            <span class="fa fa-user-o aside-user-icon text-white d-block text-center"></span>  
+                                        </div> 
+                                        <div class="w-65">
+                                            <p class="bot-name mb-0">Marko Markovic</p>
+                                            <p class="small aside-date mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>
+                                            <hr class="mt-2 mb-0">
+                                        </div>
+                                        <div class="w-20 aside-bot-info category-color d-flex align-items-center">
+                                            <span class="fa fa-check-circle"></span>
+                                            <span class="bot-number pl-2">170</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex pt-2">
+                                        <div class="w-15">
+                                            <span class="fa fa-user-o aside-user-icon text-white d-block text-center"></span>  
+                                        </div> 
+                                        <div class="w-65">
+                                            <p class="bot-name mb-0">Stefan Stefanovic</p>
+                                            <p class="small aside-date mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>
+                                            <hr class="mt-2 mb-0">
+                                        </div>
+                                        <div class="w-20 aside-bot-info category-color d-flex align-items-center">
+                                            <span class="fa fa-check-circle"></span>
+                                            <span class="bot-number pl-2">120</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex pt-2">
+                                        <div class="w-15">
+                                            <span class="fa fa-user-o aside-user-icon text-white d-block text-center"></span>  
+                                        </div> 
+                                        <div class="w-65">
+                                            <p class="bot-name mb-0">Stefan Jovanovic</p>
+                                            <p class="small aside-date mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>
+                                            <hr class="mt-2 mb-0">
+                                        </div>
+                                        <div class="w-20 aside-bot-info category-color d-flex align-items-center">
+                                            <span class="fa fa-check-circle"></span>
+                                            <span class="bot-number pl-2">105</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex pt-2">
+                                        <div class="w-15">
+                                            <span class="fa fa-user-o aside-user-icon text-white d-block text-center"></span>  
+                                        </div> 
+                                        <div class="w-65">
+                                            <p class="bot-name mb-0">Stefan Jovanovic</p>
+                                            <p class="small aside-date mb-0">
+                                                <span>29.11.2018.</span><span>15:40</span>
+                                            </p>
+                                            <hr class="mt-2 mb-0">
+                                        </div>
+                                        <div class="w-20 aside-bot-info category-color d-flex align-items-center">
+                                            <span class="fa fa-check-circle"></span>
+                                            <span class="bot-number pl-2">105</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex pt-2">
+                                        <div class="w-15">
+                                            <span class="fa fa-user-o aside-user-icon text-white d-block"></span>  
+                                        </div> 
+                                        <div class="w-65">
+                                            <p class="bot-name mb-0">Aleksa Aleksic</p>
+                                            <p class="small aside-date mb-0">
+                                                <span>29.11.2018.</span><span>18:20</span>
+                                            </p>
+                                            <hr class="mt-2 mb-0">
+                                        </div>
+                                        <div class="w-20 aside-bot-info category-color d-flex align-items-center">
+                                            <span class="fa fa-check-circle"></span>
+                                            <span class="bot-number pl-2">100</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex pt-2">
+                                        <div class="w-15">
+                                            <span class="fa fa-user-o aside-user-icon text-white d-block"></span>  
+                                        </div> 
+                                        <div class="w-65">
+                                            <p class="bot-name mb-0">Aleksa Aleksic</p>
+                                            <p class="small aside-date mb-0">
+                                                <span>29.11.2018.</span><span>18:20</span>
+                                            </p>
+                                            <hr class="mt-2 mb-0">
+                                        </div>
+                                        <div class="w-20 aside-bot-info category-color d-flex align-items-center">
+                                            <span class="fa fa-check-circle"></span>
+                                            <span class="bot-number pl-2">100</span>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </aside>
+                        </div><!--section lead-aside ends here-->
+
+                        <!--lead-slider-wrapper starts here-->
+                        <div class="col-lg-6 order-first mb-4 lead-slider-wrapper">
+                            <ul class="owl-carousel list-unstyled lead-slider">
+                                <li class="position-relative" data-category="#18B6E9">
+                                    <a href="#" class="lead-slider-img img-holder size-4by3">
+                                        <img src="img/pehar.jpg" alt=""/>
+                                    </a>
+                                    <div class=" lead-slider-details position-absolute">
+                                        <h2>
+                                            <a href="#" class="text-white lead-news-title">
+                                                NEMA MILOSTI UEFA Tri kluba uslovno
+                                                izbačena iz Evrope, a jedan je iz
+                                                našeg komšiluka
+                                            </a>
+                                        </h2>
+                                        <p class="font-weight-light">
+                                            <span>29.11.2018.</span> <span>12:53 </span>
+                                            <a href="#" class="category-color text-uppercase">sport</a>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="text-white bot-counter category-bg position-absolute d-block">280</a>
+                                </li>
+                                <li class="position-relative" data-category="#18B6E9">
+                                    <a href="#" class="lead-slider-img img-holder size-4by3">
+                                        <img src="img/pehar.jpg" alt=""/>
+                                    </a>
+                                    <div class=" lead-slider-details position-absolute">
+                                        <h2>
+                                            <a href="#" class="text-white lead-news-title">
+                                                NEMA MILOSTI UEFA Tri kluba uslovno
+                                                izbačena iz Evrope, a jedan je iz
+                                                našeg komšiluka
+                                            </a>
+                                        </h2>
+                                        <p class="font-weight-light">
+                                            <span>29.11.2018.</span> <span>12:53 </span>
+                                            <a href="#" class="category-color text-uppercase">sport</a>
+                                        </p>
+                                    </div>
+                                    <a href="#" class="text-white bot-counter category-bg position-absolute d-block">280</a>
+                                </li>
+
+                            </ul>
+                        </div><!--lead slider wrapper ends here-->
+
+                        <!--LEAD COMMENTS starts here(TABULATOR)-->
+                        <div class="col-10 col-xm-6 col-lg-3 mb-4">
+                            <aside class="lead-comments">
+                                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-uppercase text-dark" id="home-tab" data-toggle="tab" href="#mostComments" role="tab" aria-controls="home" aria-selected="true">najvise komentara</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase text-dark" id="profile-tab" data-toggle="tab" href="#bestComments" role="tab" aria-controls="profile" aria-selected="false">najbolji komentari</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content"  id="myTabContent">
+
+                                    <!--most comment-->
+                                    <div class="tab-pane fade show active" id="mostComments" role="tabpanel" aria-labelledby="home-tab">                                 
+
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative  px-2 pt-2" data-category="#8AB957" >
+                                            <aside class="w-25 pr-2">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika .png" alt="vucic_prica"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#">
+                                                    <p class="mb-1 lead-comments-title text-black">LUDILO MOZGA!<br> Napadaju Vucica jer im nudi izbore,hoce vlast..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>10:53</span>
+                                                    <a href="#" class="category-color">| VESTI</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">280</a>
+                                        </div> 
+
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative  px-2 pt-2" data-category="#8AB957" >
+                                            <aside class="w-25 pr-2">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika _1.png" alt="kosovo"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#"> <p class="mb-1 lead-comments-title text-black">PRISTINSKA GAZETA: Predsednik Vucic imao tacne podatke o HARA..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>11:00</span>
+                                                    <a href="#" class="category-color">| VESTI</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">205</a>
+                                        </div> 
+
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative px-2 pt-2" data-category="#056DD5">
+                                            <aside class="w-25 pr-2 ">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika _2.png" alt="zadruga"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#"><p class="mb-1 lead-comments-title text-black">Zadrugari su bili SOKIRANI njegovim novim izborom:Ona je novi..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>10:53</span>
+                                                    <a href="#" class="category-color">| ZABAVA</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">180</a>
+                                        </div> 
+
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative  px-2 pt-2" data-category="#8AB957" >
+                                            <aside class="w-25 pr-2">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika _1.png" alt="kosovo"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#"> <p class="mb-1 lead-comments-title text-black">PRISTINSKA GAZETA: Predsednik Vucic imao tacne podatke o HARA..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>11:00</span>
+                                                    <a href="#" class="category-color">| VESTI</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">205</a>
+                                        </div> 
+
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative px-2 pt-2" data-category="#A695C7">
+                                            <aside class="w-25 pr-2">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika _2.png" alt="zadruga"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#">
+                                                    <p class="lead-comments-title text-black mb-1">Zadrugari su bili SOKIRANI njegovim novim izborom:Ona je novi..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>10:53</span>
+                                                    <a href="#" class="category-color">| ZANIMLJIVOSTI</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">120</a>
+                                        </div> 
+                                    </div>
+                                    <!--bestComments starts here-->
+                                    <div class="tab-pane fade" id="bestComments" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative  px-2 pt-2" data-category="#8AB957" >
+                                            <aside class="w-25 pr-2">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika .png" alt="vucic_prica"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#">
+                                                    <p class="mb-1 lead-comments-title text-black">LUDILO MOZGA!<br> Napadaju Vucica jer im nudi izbore,hoce vlast..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>10:53 |</span>
+                                                    <a href="#" class="category-color"> VESTI</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">280</a>
+                                        </div> 
+
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative  px-2 pt-2" data-category="#8AB957" >
+                                            <aside class="w-25 pr-2">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika _1.png" alt="kosovo"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#"> <p class="mb-1 lead-comments-title text-black">PRISTINSKA GAZETA: Predsednik Vucic imao tacne podatke o HARA..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>11:00</span>
+                                                    <a href="#" class="category-color">| VESTI</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">205</a>
+                                        </div> 
+
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative px-2 pt-2" data-category="#F65656">
+                                            <aside class="w-25 pr-2 ">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika _2.png" alt="zadruga"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#"><p class="mb-1 lead-comments-title text-black">Zadrugari su bili SOKIRANI njegovim novim izborom:Ona je novi..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>10:53</span>
+                                                    <a href="#" class="category-color">| LIFESTYLE</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">180</a>
+                                        </div> 
+                                        <div class="lead-comments-items bg-white d-flex justify-content-start position-relative px-2 pt-2" data-category="#A695C7">
+                                            <aside class="w-25 pr-2">
+                                                <a href="#" class="d-block img-holder size-4by3">
+                                                    <img src="img/Slika _2.png" alt="zadruga"/>
+                                                </a>
+                                            </aside>
+                                            <article class="w-65">
+                                                <a href="#">
+                                                    <p class="lead-comments-title text-black mb-1">Zadrugari su bili SOKIRANI njegovim novim izborom:Ona je novi..</p>
+                                                </a>
+                                                <p class="small aside-date mb-2">
+                                                    <span>29.11.2017.</span><span>10:53</span>
+                                                    <a href="#" class="category-color">| ZANIMLJIVOSTI</a>
+                                                </p>
+                                                <hr class="my-0">
+                                            </article>
+                                            <a href="#" class="text-white bot-counter category-bg position-absolute d-block">120</a>
+                                        </div> </div>
+                                </div>                                 
+                                <!--bestComments ends here--> 
+                            </aside>
+                        </div><!--lead-comments starts here-->
+
+                    </div>
+                </section><!--section LEAD-NEWS ends here-->
+
+                <!------------------------DETAILED-NEWS starts here-------------->
+                <section class="detailed-news">
+                    <div class="row">
+                        <div class=" col-sm-6 col-xm-8 col-lg-3 order-last order-lg-first mb-4">
+                            <!--class NEWS-COLLECTION ASIDE-->
+
+                            <aside class="news-collection-aside bg-white" data-category="#8AB957">
+                                <div class="green-line"></div>
+                                <div class="news-collection-aside-title text-align pb-2 pt-3 text-center text-uppercase">
+                                    <h6>zucne rasprave</h6>
+                                </div>
+                                <div class="aside-news-item px-3 pt-3 pb-0">
+                                    <a href="#" class="d-block img-holder size-2by1">
+                                        <img src="img/Slika vesti.png" alt="izbori"/>
+                                    </a>
+                                    <a href="#" class="d-block"><p class="text-black aside-news-item-title mb-0 py-2">
+                                            SAZNAJEMO Vučić blizu odluke o raspisivanju 
+                                            vanrednih parlamentarnih izbora
+                                        </p></a>
+                                    <p class="small mb-0 aside-news-item-date ">
+                                        <span>29.11.2017. |</span><span> 10:53</span>
+                                        <a href="#" class="category-color">| VESTI</a>                             
+                                    </p>
+                                </div>
+
+                                <ul class="aside-items list-unstyled bg-white mb-2">
+                                    <li class="d-flex pt-2 px-3">
+                                        <div class="w-10">
+                                            <span class="d-block text-center category-color d-block aside-number">1</span>  
+                                        </div> 
+                                        <div class="w-85 pl-3">
+                                            <p class="bot-name mb-0 ">Zarko Markovic:</p>
+                                            <p class="aside-item-title text-primary font-italic"> “Taman da vidimo koliko je "jaka" opozicija.”</p>
+                                            <p class="small aside-date text-right  mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>                             
+                                        </div>                                        
+                                    </li>
+                                    <li class="d-flex pt-2 px-3">
+                                        <div class="w-10">
+                                            <span class="d-block text-center category-color d-block aside-number">2</span>  
+                                        </div> 
+                                        <div class="w-85 pl-3">
+                                            <p class="bot-name mb-0 ">Iva Jovanovic:</p>
+                                            <p class="aside-item-title text-primary font-italic"> “Vlada radi odlicno, a opozicija ce konacno...”</p>
+                                            <p class="small aside-date text-right  mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>                             
+                                        </div>                                        
+                                    </li>
+                                    <li class="d-flex pt-2 px-3">
+                                        <div class="w-10">
+                                            <span class="d-block text-center category-color d-block aside-number">3</span>  
+                                        </div> 
+                                        <div class="w-85 pl-3">
+                                            <p class="bot-name mb-0 ">Aca Djuric:</p>
+                                            <p class="aside-item-title text-primary font-italic"> “Nadamo se da se to nce desiti, narod to ne zeli!”</p>
+                                            <p class="small aside-date text-right  mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>                             
+                                        </div>                                        
+                                    </li>
+                                       <li class="d-flex pt-2 px-3">
+                                        <div class="w-10">
+                                            <span class="d-block text-center category-color d-block aside-number">4</span>  
+                                        </div> 
+                                        <div class="w-85 pl-3">
+                                            <p class="bot-name mb-0 ">Darko Vesic:</p>
+                                            <p class="aside-item-title text-primary font-italic"> “Nadamo se da se to nce desiti, narod to ne zeli!”</p>
+                                            <p class="small aside-date text-right  mb-0">
+                                                <span>29.11.2018.</span><span>11:50</span>
+                                            </p>                             
+                                        </div>                                        
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+
+                        <!------------------second-column starts here------------------------>
+                        <div class="col-xm-7 col-lg-6" data-category="#8AB957">
+                            <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                              <article class="news-item d-flex bg-white mb-3">
+                                <a href="#" class="w-25 img-holder size-4by3">
+                                    <img src="img/medojevic.png" alt="medojevic"/>
+                                </a>
+                                <div class="w-75 news-item-content">
+                                    <h6>
+                                        <a href="#" >DRAMA! Medojević opet prebačen
+                                            u Urgentni centar u Podgorici</a>
+                                    </h6>
+                                    <p class="description">
+                                        Poslanik Demokratskog fronta Nebojša 
+                                        Medojević prebačen je pre pola sata u 
+                                        Urgentni centar Kliničkog…
+                                    </p>
+                                    <p class="date">
+                                        <span>29.11.2017.</span><span>10:53 |</span>
+                                        <a href="#" class="category-color"> VESTI</a>
+                                    </p>
+                                    <a href="#" class="bot-counter category-bg"></a>
+                                </div>
+                            </article>
+                            <div class=" text-right next-page">
+                                 <a href="#" class="btn category-bg btn-md-lg text-white d-inline-block">Sledeca
+                                     <span class="fa fa-angle-right d-inline-block pl-2"></span>
+                                 </a>
+                            </div>
+                        </div>
+                             <!------------------second-column ends here------------------------>
+
+
+
+                             <!---aside-------------------------------------->
+                             <div class="col-lg-3 bg-light d-none d-lg-block">
+                                <aside>
+                                    <!---div.news-collection(poslednji komentari) starts here-->  
+
+                                    <!--news-item-article----------(sport news)------------>
+                                    <div class="news-item-article mb-4" data-category="#18B6E9">
+                                        <div class=" news-item-top position-relative">
+                                            <a href="#" class="img-holder size-16by9">
+                                                <img src="img/Rectangle 3.png" alt="football"/>
+                                            </a>
+
+                                            <div class="news-item-detail position-absolute">                                 
+                                                <h6>
+                                                    <a href="#" class="text-white news-item-top-title">
+                                                        LUDNICA U MADRIDU River posle 
+                                                        spektakularnog preokreta
+                                                    </a>
+                                                </h6>
+                                                <p class=" small font-weight-light article-date">
+                                                    <span>29.11.2018.</span> <span>12:53 |</span>
+                                                    <a href="#" class="category-color text-uppercase"> sport</a>
+                                                </p> 
+                                            </div>
+                                        </div>
+
+                                        <div class="news-item-bottom bg-white p-3 position-relative mb-4">
+                                            <p class="commentator">Beti Vesic:</p> 
+                                            <p class="mb-2 news-item-bottom-title">
+                                                <a href="#">”Baš mi je zao. Da nije bilo
+                                                    autogola i crvenog i povredio se Gago…
+                                                    Sve je bilo protiv Boke!”</a>
+                                            </p>
+                                            <p class="small mb-0 article-date ">
+                                                <span>29.11.2017. |</span><span> 10:53</span>
+                                            </p>
+                                            <a href="#" class="position-absolute category-bg bot-counter text-white">204</a>
+                                        </div>
+                                    </div>  <!--news-item-article ends here---------(sport news)------------>
+                                    <!--banner starts here-->
+                                    <div class="banner  mb-4">
+                                        <figure class="news-item mb-0 text-center">
+                                            <img src="img/baner 300.png" alt="baner300"/>
+                                        </figure>
+                                    </div> <!--banner ends here-->
+                                    <!---news-item (news) starts here-->
+                                    <div class="news-item mb-4" data-category="#8AB957">
+                                        <a href="#" class="img-holder size-16by9">
+                                            <img src="img/pariz.png" alt="pariz"/>
+                                        </a>
+                                        <div class="news-item-detail bg-white p-3 position-relative">
+                                            <h6>
+                                                <a href="#" class="text-black d-block">I 
+                                                    dalje rasulo u Parizu: Policija baca
+                                                    suzavac na protestante
+                                                </a>
+                                            </h6>
+                                            <p class="small mb-0 article-date ">
+                                                <span>29.11.2017. |</span><span> 10:53</span>
+                                                <a href="#" class="category-color">| VESTI</a>                             
+                                            </p>
+                                        </div>
+                                        <a href="#" class="category-bg position-absolute bot-counter text-white">204</a>
+                                    </div>  <!---news-item (news) ends here-->
+                                    <!---again news-item (news) starts here-->        
+                                    <div class="news-item  mb-4" data-category="#8AB957">
+                                        <a href="#" class="img-holder size-16by9">
+                                            <img src="img/djuric.png" alt="djuric"/>
+                                        </a>
+                                        <div class="news-item-detail bg-white p-3 position-relative">
+                                            <h6>
+                                                <a href="#" class="text-black d-block">ÐURIĆ:
+                                                    Ne treba nam još oružja na 
+                                                    buretu baruta!
+                                                </a>
+                                            </h6>
+                                            <p class="small mb-0 article-date ">
+                                                <span>29.11.2017. |</span><span> 10:53</span>
+                                                <a href="#" class="category-color">| VESTI</a>                             
+                                            </p>
+                                        </div>
+                                        <a href="#" class="category-bg d-block position-absolute bot-counter text-white">204</a>
+                                    </div>  <!---news-item (news) starts here-->
+                                    <!--long banner starts here-->
+                                    <div class="long-banner text-center">
+                                        <figure>
+                                            <img src="img/longbanner.png" alt=""/>
+                                        </figure>
+                                    </div><!--long banner ends here-->
+
+                                </aside><!--aside for this page ends here-->
+                            </div>
+                        </div>
+
+                </section>  <!------------------------DETAILED-NEWS ends here-------------->
+            </main>
+        </div>
+
+
+        <!--FOOTER starts here-->
+        <footer>
+            <div class="container pt-4 pb-2">
+
+                <div class="footer-top  mb-sm-5">
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li>
+                            <a href="#top">Naslovna</a>
+                        </li>
+                        <li>
+                            <a href="#">Vesti</a>
+                        </li>
+                        <li>
+                            <a href="#">Sport</a>
+                        </li>
+                        <li>
+                            <a href="#">Zanimljivosti</a>
+                        </li>
+                        <li>
+                            <a href="#">Zabava</a>
+                        </li>
+                        <li>
+                            <a href="#">Hronika</a>
+                        </li>
+                        <li>
+                            <a href="#">Razonoda</a>
+                        </li>
+                        <li>
+                            <a href="#">Lifestyle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social text-center mb-4 mb-sm-5">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                </div>
+                <div class="footer-middle  text-secondary mb-4 py-3">
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>Marketing</li>
+                        <li>Impressum</li>
+                        <li>Pravila i uslovi koriscenja</li>
+                    </ul>
+                </div>
+                <div class="footer-bottom text-white text-center">
+                    <p class="small">Komentar Online © 2018. Sva prava zadržana. </p> 
+                </div>
+            </div> 
+
+        </footer>
+        <!--FOOTER ends here-->
+
+
+
+
+        <!--SCRIPTS goes here-->
+        <!--First jquery, then popper and finaly bootstrap-->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/popper.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!--Custom page JS-->
+        <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+        <!--All page js-->
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
+
