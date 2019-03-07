@@ -6,8 +6,14 @@
             height:100%;
         }
         .news-item-content{
-            padding:0.875rem;
+            padding: 0.5rem 0.5rem 0 0.5rem;
             color:$date-color;
+            h6{              
+                    font-size:1rem !important;
+                    line-height: 1rem !important;
+                    max-height: 2rem !important;
+                    overflow: hidden;            
+            }
             .description{
                 margin-bottom: 0.875rem;
             }
@@ -25,11 +31,25 @@
         }
     }
 }
+@media(min-width:450px){
+    .detailed-news{
+        .news-item{
+            .news-item-content{
+                h6{              
+                    font-size:1.2rem !important;
+                    line-height: 1.2rem !important;
+                    max-height: 2.4rem !important;
+                    overflow: hidden;            
+            }
+            }
+        }
+    }
+}
 @media(min-width:576px){
     .detailed-news{
         .news-item{
             .news-item-content{
-                padding: 0.5rem;
+                
                 .description{
                     line-height: 1.2rem;
                     max-height: 2.4rem;
