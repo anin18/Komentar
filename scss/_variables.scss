@@ -4,7 +4,6 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
-
 $white:    #fff !default;
 $gray-100: #F2F2F2 !default;
 $gray-200: #e9ecef !default;
@@ -219,7 +218,7 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
+  /*sm: 540px,*/
   md: 720px,
   lg: 960px,
   xl: 1177px
@@ -233,8 +232,8 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12 !default;
-$grid-gutter-width:           17px !default;
+$grid-columns:                18 !default;
+$grid-gutter-width:           18px !default;
 
 
 // Components
@@ -734,8 +733,8 @@ $nav-link-height:                   $font-size-base * $line-height-base + $nav-l
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
 $navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
 
-$navbar-toggler-padding-y:          .25rem !default;
-$navbar-toggler-padding-x:          .75rem !default;
+$navbar-toggler-padding-y:          .2rem !default;
+$navbar-toggler-padding-x:          .55rem !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
 $navbar-toggler-border-radius:      $btn-border-radius !default;
 

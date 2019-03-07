@@ -34,10 +34,10 @@ $toggler-line:$secondary;
         border-color:$line-header-color;  
         .line1, .line2, .line3 {
             display: block;
-            width: 34px;
+            width: 26px;
             height: 2px;
             background-color: $toggler-line;
-            margin: 6px 0;
+            margin: 4px 0;
             transition: 0.4s;       
         }     
         &:hover, &:focus {
@@ -49,13 +49,13 @@ $toggler-line:$secondary;
         }
     }
     .active .line1 {
-        -webkit-transform:rotate(45deg) translate(7px , 6px);
-        transform: rotate(45deg) translate(7px , 6px);
+        -webkit-transform:rotate(45deg) translate(5px , 5px);
+        transform: rotate(45deg) translate(5px , 5px);
     }
     .active .line2 {opacity: 0;}
     .active .line3 {
-        -webkit-transform: rotate(-45deg) translate(5px , -6px);
-        transform: rotate(-45deg) translate(5px , -6px);
+        -webkit-transform: rotate(-45deg) translate(4px , -5px);
+        transform: rotate(-45deg) translate(4px , -5px);
     } //---------toggler ends here-------------
 
   
@@ -80,11 +80,16 @@ $toggler-line:$secondary;
             border:2px solid $line-header-color;
             border-radius: 0.25rem;
             line-height: 1.2rem;
+            background-color: #0BAE92;
+            color:white;
+            &:hover{
+               opacity:0.7;
+             }
         }
     }
     .search-icon {
         color:#979797;
-        font-size: 22px;
+        font-size: 24px;
         cursor: pointer;
     }
     //-----------navbar-nav------------

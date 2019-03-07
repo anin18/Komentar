@@ -316,10 +316,10 @@ p {
     border-color: #0BAE92; }
     .header-bottom .navbar-toggler .line1, .header-bottom .navbar-toggler .line2, .header-bottom .navbar-toggler .line3 {
       display: block;
-      width: 34px;
+      width: 26px;
       height: 2px;
       background-color: #ABABAB;
-      margin: 6px 0;
+      margin: 4px 0;
       transition: 0.4s; }
     .header-bottom .navbar-toggler:hover, .header-bottom .navbar-toggler:focus {
       background: #0BAE92; }
@@ -327,13 +327,13 @@ p {
         background-color: #fff;
         transition: 0.2s; }
   .header-bottom .active .line1 {
-    -webkit-transform: rotate(45deg) translate(7px, 6px);
-    transform: rotate(45deg) translate(7px, 6px); }
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 5px); }
   .header-bottom .active .line2 {
     opacity: 0; }
   .header-bottom .active .line3 {
-    -webkit-transform: rotate(-45deg) translate(5px, -6px);
-    transform: rotate(-45deg) translate(5px, -6px); }
+    -webkit-transform: rotate(-45deg) translate(4px, -5px);
+    transform: rotate(-45deg) translate(4px, -5px); }
   .header-bottom .search-form {
     z-index: 2;
     display: none;
@@ -350,10 +350,14 @@ p {
     .header-bottom .search-form .btn {
       border: 2px solid #0BAE92;
       border-radius: 0.25rem;
-      line-height: 1.2rem; }
+      line-height: 1.2rem;
+      background-color: #0BAE92;
+      color: white; }
+      .header-bottom .search-form .btn:hover {
+        opacity: 0.7; }
   .header-bottom .search-icon {
     color: #979797;
-    font-size: 22px;
+    font-size: 24px;
     cursor: pointer; }
   .header-bottom .navbar-nav {
     background: #F2F2F2; }
@@ -919,12 +923,14 @@ aside .news-item .bot-counter {
   /*  comment-page*/ }
   .comment-wrapper .comments-form {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     background-color: rgba(138, 185, 87, 0.15); }
     .comment-wrapper .comments-form .form-control::placeholder {
       color: #ABABAB; }
-    .comment-wrapper .comments-form button:hover {
-      opacity: 0.7; }
+    .comment-wrapper .comments-form button {
+      width: 100%; }
+      .comment-wrapper .comments-form button:hover {
+        opacity: 0.7; }
   .comment-wrapper .comment-item {
     border: 1px solid #E9E9E9;
     padding: 16px 0 0 16px; }
