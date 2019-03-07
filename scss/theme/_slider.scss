@@ -40,14 +40,16 @@ $commetnted-news-color:#7c7c7c;
 
         img{
             height:100%;
+            
         }
     }
     .lead-slider-details {
         bottom:0%;
-        left:5%;
-        right:5%;
+        left:0%;
+        right:0%;
+        padding:15px 25px 15px 15px;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
         .lead-news-title{
-            /*font-size: 1.71rem;*/
             font-weight: $font-weight-normal;
             line-height:2rem;
             max-height: 4.2rem;
@@ -121,24 +123,27 @@ $commetnted-news-color:#7c7c7c;
             box-shadow: 0 3px 34px 0 rgba(0,0,0,0.1);
             margin:10px;
             position:relative;
+            margin-bottom:40px;
             .newest-comments-top{
                 &:before{
-                    content:'"';
+                    content:'”';
                     display: block;
                     position: absolute;
                     top:20%;
                     left:2%;
                     color:#0BAE92;
                     font-size: 35px;
+                    font-family: 'Arial';
                 }
                  &:after{
-                    content:'"';
+                    content:'”';
                      display: block;
                     position: absolute;
                     bottom:30%;
                     right:5%;
                     color:#0BAE92;
                     font-size: 35px;
+                     font-family: 'Arial';
                 }
             .commment-content{
                 font-weight: $font-weight-medium;
@@ -164,13 +169,13 @@ $commetnted-news-color:#7c7c7c;
                 left:15px;
                 width:40px;
                 height:30px;
-                border-style: solid;
-                border-width: 20px;
-                border-top-color: white;
-                border-left-color: transparent;
-                border-right-color: transparent;
-                border-bottom-color: transparent;
-            }
+                display:block;
+                 background-image: url('assets/triangle.png');
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-position: top center;
+               
+                  }
         }
     }
 

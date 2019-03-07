@@ -1,4 +1,5 @@
 $date-color:#7C7C7C;
+$date-light-color:#ababab;
 $commentator-color:#8D8B8B;
 .comments-line{
     background: linear-gradient(90deg, #FFFFFF 0%, #F9F9F9 79.15%, #F2F2F2 100%);
@@ -13,69 +14,81 @@ $commentator-color:#8D8B8B;
         background: linear-gradient(90deg, #E0311F 0%, #F2F2F2 100%);
     }
 }
+
 .news-item-bottom-title{
     padding-right: 10px;
+
+}
+.youtube-comments-section, .sport-comments-section, .news-comments-section{   
+    .news-item-detail{
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+        .article-date{
+            color:#fff;
+        }
+    }
 }
 .youtube-comments-section{   
 
-        .news-item-top-title, .news-item-bottom-title{
-            font-size: 0.875rem;
-            line-height: 0.875rem;
-            max-height: 1.78rem;
-            overflow:hidden;
-        }
+    .news-item-top-title, .news-item-bottom-title{
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        max-height: 1.78rem;
+        overflow:hidden;
+    }
+    
 }
 @media(min-width:450px){
     .youtube-comments-section{   
-        
-            .news-item-top-title, .news-item-bottom-title{
-                font-size: 1.25rem;
-                line-height:1.25rem;
-                max-height: 2.50rem;
-                overflow:hidden;
-            }
+
+        .news-item-top-title, .news-item-bottom-title{
+            font-size: 1.25rem;
+            line-height:1.25rem;
+            max-height: 2.50rem;
+            overflow:hidden;
         }
+    }
 }
 @media(min-width:576px){
     .youtube-comments-section,
     .news-comments-section,
     .sport-comments-section{   
-        
-            .news-item-top-title,.news-item-bottom-title{
-                font-size: 0.875rem;
-                line-height: 0.875rem;
-                max-height: 1.74rem;
-                overflow:hidden;
-            }
-        }   
+
+        .news-item-top-title,.news-item-bottom-title{
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            max-height: 1.74rem;
+            overflow:hidden;
+        }
+    }   
 }
 @media(min-width:768px){
-   .news-comments-section, .sport-comments-section{   
-        
-            .news-item-top-title, .news-item-bottom-title{
-                font-size: 0.85rem;
-                line-height: 0.85rem;
-                max-height: 1.80rem;
-                overflow:hidden;
-            }
-        }   
+    .news-comments-section, .sport-comments-section{   
+
+        .news-item-top-title, .news-item-bottom-title{
+            font-size: 0.85rem;
+            line-height: 0.85rem;
+            max-height: 1.80rem;
+            overflow:hidden;
+
+        }
+    }   
 }
 @media(min-width:1200px){
     .youtube-comments-section, .news-comments-section, .sport-comments-section{   
-        
-            .news-item-top-title{
-                font-size: 1.15rem;
-                line-height:1.15rem;
-                max-height: 2.3rem;
-                overflow:hidden;
-            }
-         .news-item-bottom-title{
-                font-size: 1em;
-                line-height:1.1rem;
-                max-height: 2.2rem;
-                overflow:hidden;
-            }
-        
+
+        .news-item-top-title{
+            font-size: 1.15rem;
+            line-height:1.15rem;
+            max-height: 2.3rem;
+            overflow:hidden;
+        }
+        .news-item-bottom-title{
+            font-size: 1em;
+            line-height:1.1rem;
+            max-height: 2.2rem;
+            overflow:hidden;
+        }
+
     }
 }
 .news-comments-section{
@@ -114,8 +127,9 @@ $commentator-color:#8D8B8B;
 
     }
     .news-item-detail{
-        left:2%;
-        bottom:2%;
+        left:0%;
+        bottom:0%;
+        padding:5px;
         .news-title{
             font-weight: $font-weight-normal;
         }
