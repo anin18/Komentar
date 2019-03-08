@@ -249,7 +249,7 @@
                         <!-------------------section BANNER starts here-------------------->   
                         <section class="banner text-center mb-4">
                             <figure class="my-1">
-                                <img src="img/baner 90.png" alt="banner-long"/>
+                                <img src="css/assets/baner 90.png" alt="banner-long"/>
                             </figure>
                         </section> <!-------------------section BANNER ends here-------------------->
 
@@ -257,20 +257,26 @@
                         <section class="comment-wrapper mb-3 mb-sm-4"  data-category="#8AB957">
 
                             <!--FORMA COMMENT-FORM starts here-->
-                            <form class="comments-form mb-3 mb-sm-4 "> 
+                            <form class="comments-form mb-3 mb-sm-4" method="get" action=""> 
                                 <div class="row justify-content-between">
-                                <div class="form-group col-md-10">
-                                    <input type="text" class="form-control" placeholder="Ostavi komentar">
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <input type="text" class="form-control"  placeholder="Ime">
-                                </div>    
-                                    <div class=" form-group col-5 col-xm-4 col-md-3">
-                                        <button type="submit" class="btn category-bg d-block text-white">Pošalji</button>
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="message" placeholder="Ostavi komentar" value="">
+                                            <div class="error-msg"></div>
+                                        </div>
                                     </div>
-                                
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Ime" value="">
+                                            <div class="error-msg"></div>                                      
+                                        </div>
+                                    </div>    
+                                    <div class=" col-5 col-xm-4 col-md-3">
+                                        <button type="submit" class="btn category-bg text-white">Pošalji</button>
+                                    </div>
+
                                 </div>
-                            </form>  <!--FORMA COMMENT-FORM starts here-->
+                            </form>  <!--FORMA COMMENT-FORM ends here-->
 
                             <div class="comment-inner">
                                 <article class="comment-item mb-3">
@@ -287,7 +293,7 @@
                                                     <span>280</span>
                                                 </a>  
                                                 <a href="#" class="dislike-comment mb-1 mb-md-0">
-                                                    <img src="img/tumb-down.swg" alt="thumbDown"/>
+                                                    <img src="img/thumb-down.png" alt="thumbDown"/>
                                                     <span>280</span>
                                                 </a>
                                                 <span class="about-bot mb-1 mb-md-0">Prijavi bota
@@ -304,7 +310,7 @@
                                         </div>
                                     </div>
                                 </article>
-                                  <article class="comment-item mb-3">
+                                <article class="comment-item mb-3">
                                     <h6 class="commentator">Žarko Marković</h6>
                                     <p class="date small mb-2">
                                         <span>12.11.2018.</span><span>13:04</span>
@@ -318,7 +324,7 @@
                                                     <span>280</span>
                                                 </a>  
                                                 <a href="#" class="dislike-comment mb-1 mb-md-0">
-                                                    <img src="img/tumb-down.swg" alt="thumbDown"/>
+                                                    <img src="img/thumb-down.png" alt="thumbDown"/>
                                                     <span>280</span>
                                                 </a>
                                                 <span class="about-bot mb-1 mb-md-0">Prijavi bota
@@ -335,7 +341,7 @@
                                         </div>
                                     </div>
                                 </article>
-                                 <article class="comment-item mb-3">
+                                <article class="comment-item mb-3">
                                     <h6 class="commentator">Žarko Marković</h6>
                                     <p class="date small mb-2">
                                         <span>12.11.2018.</span><span>13:04</span>
@@ -349,7 +355,7 @@
                                                     <span>280</span>
                                                 </a>  
                                                 <a href="#" class="dislike-comment mb-1 mb-md-0">
-                                                    <img src="img/tumb-down.swg" alt="thumbDown"/>
+                                                    <img src="img/thumb-down.png" alt="thumbDown"/>
                                                     <span>280</span>
                                                 </a>
                                                 <span class="about-bot mb-1 mb-md-0">Prijavi bota
@@ -368,12 +374,12 @@
                                 </article>
                             </div>
                             <div class=" text-center all-comments">
-                                 <a href="#" class="btn category-bg btn-md-lg text-white jus">Svi komentari 280</a>
+                                <a href="#" class="btn category-bg btn-md-lg text-white jus">Svi komentari 280</a>
                             </div>
-                           
+
                         </section>  <!-------------------section COMMENTS-WRAPPER ends here--------------------> 
 
-                         <!-------------------section READ-MORE starts here--------------------> 
+                        <!-------------------section READ-MORE starts here--------------------> 
                         <section class="read-more mb-5">
                             <h6 class="text-uppercase read-more-title mb-4">pročitaj još</h6>
                             <div class="row">
@@ -428,12 +434,12 @@
                             </div>
                         </section>  <!-------------------section READ-MORE ends here--------------------> 
                     </div>
-<!-------------------------------------ASIDE------------------------------------------>
+                    <!-------------------------------------ASIDE------------------------------------------>
                     <div class="col-lg-6 bg-light d-none d-lg-block">
                         <aside class="p-3 p-sm-4">
-                <!---div.news-collection(poslednji komentari) starts here-->  
+                            <!---div.news-collection(poslednji komentari) starts here-->  
                             <div class="latest-comments news-collection-aside bg-white mb-4" data-category="#8AB957">
-                            
+
                                 <div class="news-collection-aside-title text-align pb-2 pt-3 text-center text-uppercase">
                                     <h6>poslednji komentari</h6>
                                 </div>
@@ -501,53 +507,40 @@
                                     </li>
                                 </ul>
                             </div><!---div.news-collection(poslednji komentari) ends here-->
-                            
-        <!--news-item-article----------(sport news)------------>
-                            <div class="news-item-article mb-4" data-category="#18B6E9">
-                                <div class=" news-item-top position-relative">
-                                    <a href="#" class="img-holder size-16by9">
-                                        <img src="img/Rectangle 3.png" alt="football"/>
-                                    </a>
 
-                                    <div class="news-item-detail position-absolute">                                 
-                                        <h6>
-                                            <a href="#" class="text-white news-item-top-title">
-                                                LUDNICA U MADRIDU River posle 
-                                                spektakularnog preokreta
-                                            </a>
-                                        </h6>
-                                        <p class=" small font-weight-light article-date">
-                                            <span>29.11.2018.</span> <span>12:53 |</span>
-                                            <a href="#" class="category-color text-uppercase"> sport</a>
-                                        </p> 
-                                    </div>
-                                </div>
-
-                                <div class="news-item-bottom bg-white p-3 position-relative mb-4">
-                                    <p class="commentator">Beti Vesic:</p> 
-                                    <p class="mb-2 news-item-bottom-title">
-                                        <a href="#">”Baš mi je zao. Da nije bilo
-                                            autogola i crvenog i povredio se Gago…
-                                            Sve je bilo protiv Boke!”</a>
-                                    </p>
+                            <!--news-item----------(sport news)------------>                           
+                            <div class="news-item  mb-4 position-relative" data-category="#18B6E9">
+                                <a href="#" class="img-holder size-16by9">
+                                     <img src="img/Rectangle 3.png" alt="madrid"/>
+                                </a>
+                                <div class="news-item-detail bg-white p-3">
+                                    <h6>
+                                        <a href="#" class="text-black d-block">
+                                            LUDNICA U MADRIDU
+                                            River posle spektakularnog preokreta
+                                        </a>
+                                    </h6>
                                     <p class="small mb-0 article-date ">
                                         <span>29.11.2017. |</span><span> 10:53</span>
+                                        <a href="#" class="category-color">| SPORT</a>                             
                                     </p>
-                                    <a href="#" class="position-absolute category-bg bot-counter text-white">204</a>
                                 </div>
-                            </div>  <!--news-item-article ends here---------(sport news)------------>
-                  <!--banner starts here-->
+                                <a href="#" class="category-bg d-block position-absolute bot-counter text-white">206</a>
+                            </div>  <!--news-item ends here---------(sport news)------------>
+                           
+                            <!--banner starts here-->
                             <div class="banner  mb-4">
                                 <figure class="news-item mb-0 text-center">
-                                    <img src="img/baner 300.png" alt="baner300"/>
+                                    <img src="css/assets/baner 300.png" alt="baner300"/>
                                 </figure>
                             </div> <!--banner ends here-->
-                    <!---news-item (news) starts here-->
-                            <div class="news-item mb-4" data-category="#8AB957">
+                            <!---news-item (news) starts here-->
+                            
+                            <div class="news-item  mb-4 position-relative" data-category="#8AB957">
                                 <a href="#" class="img-holder size-16by9">
-                                    <img src="img/pariz.png" alt="pariz"/>
+                                     <img src="img/pariz.png" alt="pariz"/>
                                 </a>
-                                <div class="news-item-detail bg-white p-3 position-relative">
+                                <div class="news-item-detail bg-white p-3">
                                     <h6>
                                         <a href="#" class="text-black d-block">I 
                                             dalje rasulo u Parizu: Policija baca
@@ -559,14 +552,16 @@
                                         <a href="#" class="category-color">| VESTI</a>                             
                                     </p>
                                 </div>
-                                <a href="#" class="category-bg position-absolute bot-counter text-white">204</a>
+                                <a href="#" class="category-bg d-block position-absolute bot-counter text-white">205</a>
                             </div>  <!---news-item (news) ends here-->
-                           <!---again news-item (news) starts here-->        
-                            <div class="news-item  mb-4" data-category="#8AB957">
+                           
+
+                            <!---again news-item (news) starts here-->        
+                            <div class="news-item  mb-4 position-relative" data-category="#8AB957">
                                 <a href="#" class="img-holder size-16by9">
                                     <img src="img/djuric.png" alt="djuric"/>
                                 </a>
-                                <div class="news-item-detail bg-white p-3 position-relative">
+                                <div class="news-item-detail bg-white p-3">
                                     <h6>
                                         <a href="#" class="text-black d-block">ÐURIĆ:
                                             Ne treba nam još oružja na 
@@ -578,46 +573,24 @@
                                         <a href="#" class="category-color">| VESTI</a>                             
                                     </p>
                                 </div>
-                                <a href="#" class="category-bg d-block position-absolute bot-counter text-white">204</a>
+                                <a href="#" class="category-bg d-block bot-counter position-absolute text-white">204</a>
                             </div>  <!---news-item (news) starts here-->
-                           <!--long banner starts here-->
-                            <div class="long-banner text-center">
+
+                            <!--long banner starts here-->
+                            <div class="tall-banner text-center">
                                 <figure>
-                                    <img src="img/longbanner.png" alt=""/>
+                                    <img src="css/assets/tall-banner.png" alt="tall-banner"/>
                                 </figure>
-                            </div><!--long banner ends here-->
-                            
+                            </div><!--tall banner ends here-->
+
                         </aside><!--aside for this page ends here-->
                     </div>
-        
+
                 </div>
 
 
             </main><!--MAIN ends here-->
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!--FOOTER starts here-->
         <footer>

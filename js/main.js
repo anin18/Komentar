@@ -90,7 +90,43 @@ $(document).ready(function () {
     }
 
 
-
+/*FORM VALIDATION*/
+$(function () {
+        $(".comments-form").validate({
+            highlight: function (element) {
+                $(element).closest('.form-group').addClass("has-danger");
+                $(element).addClass("form-control-danger");
+            },
+            unhighlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                $(element).removeClass('form-control-danger').addClass('form-control-success');
+            },
+            rules: {
+                name: {
+                    required: true,
+                    minlength:5
+                },
+                message:{
+                    required:true,
+                    maxlength:255
+                }
+            },
+            message: {
+                name: {
+                    required: "Ovo polje je obavezno!",
+                    minlength:"Ime mora da zadrzi najmanje 5 karaktera."
+                },
+                message: {
+                    required:'Ovo polje je obavezno.',
+                    maxlength:'Maksimalni broj karaktera je 255.'
+            },
+            errorElement: 'p',
+            errorPlacement: function (error, element) {
+                error.appendTo($(element).closest('.form-group').find('.error-msg'));
+            }
+        }
+        });
+    });
 
 
 

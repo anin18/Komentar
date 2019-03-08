@@ -1,5 +1,5 @@
 $lead-date-color:#F0F0F0;
-$commetnted-news-color:#7c7c7c;
+$commented-news-color:#7c7c7c;
 
 .lead-slider-wrapper{
     position:relative;
@@ -153,7 +153,7 @@ $commetnted-news-color:#7c7c7c;
             }
 
             .commented-news{
-                color:$commetnted-news-color;
+                color:$commented-news-color;
             }
             .article-date{
                 span{
@@ -165,10 +165,10 @@ $commetnted-news-color:#7c7c7c;
             &:after{
                 content: '';
                 position: absolute;
-                bottom:-30px;
+                bottom:-17px;
                 left:15px;
                 width:40px;
-                height:30px;
+                height:25px;
                 display:block;
                  background-image: url('assets/triangle.png');
                 background-repeat: no-repeat;
