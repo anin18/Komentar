@@ -69,29 +69,29 @@ $(document).ready(function () {
             items: 1
         });
         $('.newest-comments-slider').owlCarousel({
-            dots:true,
-            nav:false,
-            loop:true,
-            responsive:{
-                0:{
-                    items:1
+            dots: true,
+            nav: false,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
                 },
-                450:{
-                    items:2
+                450: {
+                    items: 2
                 },
-                768:{
-                    items:3
+                768: {
+                    items: 3
                 },
-                992:{
-                    items:4
+                992: {
+                    items: 4
                 }
             }
         });
     }
 
 
-/*FORM VALIDATION*/
-$(function () {
+    /*FORM VALIDATION   COMMENTS-FORM*/
+    $(function () {
         $(".comments-form").validate({
             highlight: function (element) {
                 $(element).closest('.form-group').addClass("has-danger");
@@ -104,32 +104,69 @@ $(function () {
             rules: {
                 name: {
                     required: true,
-                    minlength:5
-                },
-                message:{
-                    required:true,
-                    maxlength:255
-                }
-            },
-            message: {
-                name: {
-                    required: "Ovo polje je obavezno!",
-                    minlength:"Ime mora da zadrzi najmanje 5 karaktera."
+                    minlength: 5,
+                    maxlength: 15
                 },
                 message: {
-                    required:'Ovo polje je obavezno.',
-                    maxlength:'Maksimalni broj karaktera je 255.'
+                    required: true,
+                    minlength: 20,
+                    maxlength: 150
+                },
+
+            },
+            messages: {
+                name: {
+                    required: "Polje je obavezno.",
+                    minlength: "Morate uneti najmanje 5 karaktera.",
+                    maxlength: "Maksimalan unos karaktera je 15."
+                },
+                message: {
+                    required: 'Polje je obavezno.',
+                    minlength: "Morate uneti najmanje 20 karaktera.",
+                    maxlength: "Maksimalan unos karaktera je 150."
+                },
             },
             errorElement: 'p',
             errorPlacement: function (error, element) {
                 error.appendTo($(element).closest('.form-group').find('.error-msg'));
             }
-        }
+
         });
     });
 
+    /*FORM VALIDATION  COMMENTS-ITEM-FORM*/
+    $(function () {
+        $(".comments-item-form").validate({
+            highlight: function (element) {
+                $(element).closest('.form-group').addClass("has-danger");
+                $(element).addClass("form-control-danger");
+            },
+            unhighlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                $(element).removeClass('form-control-danger').addClass('form-control-success');
+            },
+            rules: {
+                answer: {
+                    required: true,
+                    minlength: 20,
+                    maxlength: 150
+                }
 
+            },
+            messages: {
+                answer: {
+                    required: 'Polje Odgovor je obavezno polje.',
+                    minlength: "Morate uneti najmanje 20 karaktera.",
+                    maxlength: "Maksimalan unos karaktera je 150."
+                }
+            },
+            errorElement: 'p',
+            errorPlacement: function (error, element) {
+                error.appendTo($(element).closest('.form-group').find('.error-msg'));
+            }
 
+        });
+    });
 
 
 
